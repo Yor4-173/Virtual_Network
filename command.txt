@@ -1,0 +1,27 @@
+khang@OVS:~/Desktop$ sudo ovs-vsctl del-port br1 ovs-host
+khang@OVS:~/Desktop$ sudo ovs-vsctl add-port br1 ovs-host1 -- set interface ovs-host1 type=internal
+khang@OVS:~/Desktop$ sudo ovs-vsctl add-port br1 ovs-host2 -- set interface ovs-host2 type=internal
+khang@OVS:~/Desktop$ sudo ovs-vsctl add-port br1 ovs-host3 -- set interface ovs-host3 type=internal
+khang@OVS:~/Desktop$ sudo ovs-vsctl add-port br1 ovs-host4 -- set interface ovs-host4 type=internal
+khang@OVS:~/Desktop$ sudo ip addr add 10.0.0.3/24 dev ovs-host1
+khang@OVS:~/Desktop$ sudo ip addr add 10.0.0.4/24 dev ovs-host2
+khang@OVS:~/Desktop$ sudo ip addr add 10.0.0.5/24 dev ovs-host3
+khang@OVS:~/Desktop$ sudo ip addr add 10.0.0.6/24 dev ovs-host4
+khang@OVS:~/Desktop$ sudo ip link set ovs-host1 up
+khang@OVS:~/Desktop$ sudo ip link set ovs-host2 up
+khang@OVS:~/Desktop$ sudo ip link set ovs-host3 up
+khang@OVS:~/Desktop$ sudo ip link set ovs-host4 up
+
+khang@OVS:~/Desktop$ sudo ovs-vsctl add-port br2 ovs-host5 -- set interface ovs-host5 type=internal
+khang@OVS:~/Desktop$ sudo ovs-vsctl add-port br2 ovs-host6 -- set interface ovs-host6 type=internal
+khang@OVS:~/Desktop$ sudo ovs-vsctl add-port br2 ovs-host7 -- set interface ovs-host7 type=internal
+khang@OVS:~/Desktop$ sudo ovs-vsctl add-port br2 ovs-host8 -- set interface ovs-host8 type=internal
+khang@OVS:~/Desktop$ sudo ip addr add 10.0.0.7/24 dev ovs-host5
+khang@OVS:~/Desktop$ sudo ip addr add 10.0.0.8/24 dev ovs-host6
+khang@OVS:~/Desktop$ sudo ip addr add 10.0.0.9/24 dev ovs-host7
+khang@OVS:~/Desktop$ sudo ip addr add 10.0.0.10/24 dev ovs-host8
+khang@OVS:~/Desktop$ sudo ip link set ovs-host5 up
+khang@OVS:~/Desktop$ sudo ip link set ovs-host6 up
+khang@OVS:~/Desktop$ sudo ip link set ovs-host7 up
+khang@OVS:~/Desktop$ sudo ip link set ovs-host8 up
+khang@OVS:~/Desktop$ sudo ovs-vsctl show

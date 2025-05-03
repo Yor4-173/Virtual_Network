@@ -1,0 +1,14 @@
+# Local Rules for Snort
+# File: /etc/snort/rules/local.rules
+
+# Rule 1: Detect ICMP traffic (e.g., Ping) to the internal network
+alert icmp any any -> $HOME_NET any (msg:"ICMP Ping packet detected"; sid:1000001; rev:1;)
+
+# Rule 2: Detect SSH connection attempts to the internal network
+alert tcp any any -> $HOME_NET 22 (msg:"SSH connection attempt detected"; sid:1000002; rev:1;)
+
+# Rule 3: Detect attempt to read /etc/passwd file via HTTP GET
+alert tcp any any -> $HOME_NET 80 (msg:"Attempt to read passwd file via HTTP detected"; flow:to_server,established; content:"GET"; http_method; content:"/etc/passwd"; http_uri; sid:1000003; rev:1;)
+
+# Rule 4: Detect FIN Scan port scanning attempts
+alert tcp any any -> $HOME_NET any (msg:"FIN Scan port scanning detected"; flags:F; sid:1000004; rev:1;)

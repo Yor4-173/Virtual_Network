@@ -1,0 +1,174 @@
+-- [0] ens33
+--------------------------------------------------
+Packet Statistics
+--------------------------------------------------
+daq
+                 received: 13642
+                 analyzed: 13642
+                    allow: 13642
+                 rx_bytes: 2640833
+--------------------------------------------------
+codec
+                    total: 13642       	(100.000%)
+                    other: 6           	(  0.044%)
+                 discards: 2851        	( 20.899%)
+                      arp: 149         	(  1.092%)
+                      eth: 13642       	(100.000%)
+                    icmp4: 3           	(  0.022%)
+                 icmp4_ip: 3           	(  0.022%)
+                    icmp6: 4           	(  0.029%)
+                     igmp: 172         	(  1.261%)
+                     ipv4: 13470       	( 98.739%)
+                     ipv6: 17          	(  0.125%)
+                      tcp: 12464       	( 91.365%)
+                      udp: 844         	(  6.187%)
+--------------------------------------------------
+Module Statistics
+--------------------------------------------------
+ac_full
+                 searches: 68
+                  matches: 1828
+                    bytes: 6912
+--------------------------------------------------
+appid
+                  packets: 10636
+        processed_packets: 10636
+           total_sessions: 77
+       service_cache_adds: 13
+             bytes_in_use: 2184
+             items_in_use: 13
+--------------------------------------------------
+arp_spoof
+                  packets: 149
+--------------------------------------------------
+back_orifice
+                  packets: 843
+--------------------------------------------------
+binder
+              raw_packets: 155
+                new_flows: 73
+          service_changes: 1
+                 inspects: 228
+--------------------------------------------------
+detection
+                 analyzed: 13642
+               hard_evals: 11044
+                   alerts: 7
+             total_alerts: 7
+                   logged: 7
+--------------------------------------------------
+dns
+                  packets: 4
+                 requests: 2
+                responses: 2
+--------------------------------------------------
+http_inspect
+                    flows: 1
+                    scans: 4
+              reassembles: 4
+              inspections: 4
+                 requests: 1
+                responses: 1
+             get_requests: 1
+  max_concurrent_sessions: 1
+              total_bytes: 264
+--------------------------------------------------
+ips_actions
+                    alert: 7
+--------------------------------------------------
+normalizer
+        test_tcp_trim_win: 1
+          test_tcp_ts_nop: 6
+--------------------------------------------------
+port_scan
+                  packets: 13487
+                 trackers: 72
+--------------------------------------------------
+search_engine
+     non_qualified_events: 11037
+         qualified_events: 7
+--------------------------------------------------
+stream
+                    flows: 73
+             total_prunes: 1
+idle_prunes_proto_timeout: 1
+       tcp_timeout_prunes: 1
+--------------------------------------------------
+stream_icmp
+                 sessions: 5
+                      max: 5
+                  created: 5
+                 released: 5
+--------------------------------------------------
+stream_ip
+                 sessions: 14
+                      max: 14
+                  created: 14
+                 released: 14
+              total_bytes: 2752
+--------------------------------------------------
+stream_tcp
+                 sessions: 21
+                      max: 21
+                  created: 21
+                 released: 21
+             instantiated: 21
+                   setups: 21
+                 restarts: 1
+          invalid_seq_num: 1
+             syn_trackers: 20
+         syn_ack_trackers: 1
+              segs_queued: 6221
+            segs_released: 6221
+                segs_used: 6219
+          rebuilt_packets: 1426
+            rebuilt_bytes: 1200858
+          client_cleanups: 1
+          server_cleanups: 2
+                     syns: 28
+                 syn_acks: 8
+                   resets: 6
+                     fins: 3
+        partial_fallbacks: 18
+                 max_segs: 731
+                max_bytes: 138915
+ flush_on_asymmetric_flow: 7
+         asymmetric_flows: 7
+--------------------------------------------------
+stream_udp
+                 sessions: 33
+                      max: 33
+                  created: 37
+                 released: 37
+                 timeouts: 4
+              total_bytes: 133196
+--------------------------------------------------
+tcp
+        bad_tcp4_checksum: 2850
+--------------------------------------------------
+udp
+        bad_udp4_checksum: 1
+--------------------------------------------------
+wizard
+                tcp_scans: 756
+                 tcp_hits: 2
+               tcp_misses: 18
+                udp_scans: 31
+               udp_misses: 31
+--------------------------------------------------
+Appid Statistics
+--------------------------------------------------
+detected apps and services
+              Application: Services   Clients    Users      Payloads   Misc       Referred  
+                  unknown: 47         2          0          1          0          0         
+--------------------------------------------------
+Summary Statistics
+--------------------------------------------------
+process
+                  signals: 1
+--------------------------------------------------
+timing
+                  runtime: 00:02:06
+                  seconds: 126.662912
+                 pkts/sec: 108
+o")~   Snort exiting
