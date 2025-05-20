@@ -5,14 +5,14 @@ sudo ovs-vsctl add-br br2
 sudo ovs-vsctl add-port br0 ens33 
 
 sudo ovs-vsctl add-port br1 ovs-host1 -- set interface ovs-host1 type=internal
-sudo ovs-vsctl add-port br1 ovs-host1 -- set interface ovs-host2 type=internal
-sudo ovs-vsctl add-port br1 ovs-host1 -- set interface ovs-host3 type=internal
-sudo ovs-vsctl add-port br1 ovs-host1 -- set interface ovs-host4 type=internal
+sudo ovs-vsctl add-port br1 ovs-host2 -- set interface ovs-host2 type=internal
+sudo ovs-vsctl add-port br1 ovs-host3 -- set interface ovs-host3 type=internal
+sudo ovs-vsctl add-port br1 ovs-host4 -- set interface ovs-host4 type=internal
 
-sudo ovs-vsctl add-port br2 ovs-host1 -- set interface ovs-host5 type=internal
-sudo ovs-vsctl add-port br2 ovs-host1 -- set interface ovs-host6 type=internal
-sudo ovs-vsctl add-port br2 ovs-host1 -- set interface ovs-host7 type=internal
-sudo ovs-vsctl add-port br2 ovs-host1 -- set interface ovs-host8 type=internal
+sudo ovs-vsctl add-port br2 ovs-host5 -- set interface ovs-host5 type=internal
+sudo ovs-vsctl add-port br2 ovs-host6 -- set interface ovs-host6 type=internal
+sudo ovs-vsctl add-port br2 ovs-host7 -- set interface ovs-host7 type=internal
+sudo ovs-vsctl add-port br2 ovs-host8 -- set interface ovs-host8 type=internal
 
 sudo nano ovs_ip.sh
 sudo chmod +x ovs_ip.sh
